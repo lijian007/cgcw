@@ -1,0 +1,98 @@
+@import '~antd/dist/antd.css';
+
+.ant-layout{
+  background:none ;
+}
+.ant-layout-header{
+  background:none ;
+  text-align: center;
+}
+.ant-menu{
+  background:none ;
+  text-align: center;
+  color:oldlace
+}
+
+.header-row{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+.logo-container{
+  display: inline-block;
+  margin: auto;
+  margin-top:5px;
+  line-height: normal;
+
+}
+.language-selection-zone{
+  display: flex;
+  width:4em;
+ 
+  align-items: flex-end;
+  line-height: normal;
+}
+.language-selection-text{
+  font-size:1em;
+  margin:auto;
+  font-weight: 700;
+  color:white;
+}
+
+.footer-box{
+  text-align:center;
+  color:rgb(223, 215, 215);
+  height: 10em;
+  
+  background:none;
+
+}
+.page-divider{
+  border-top: 1px solid rgb(184, 177, 177);
+}
+.content-place-holder{
+  width: 60vw;
+  height: 75vh;
+  color: white;
+}
+
+.side-menu{
+  color: white;
+  
+}
+
+.top-nav-bar{
+  background: none !important;
+  color: rgb(247, 238, 238);
+}
+
+.main-content{
+  background:white;
+  z-index:-1;
+}
+.logo-image{
+  margin-left:8em;
+}
+@media (min-width: 901px){
+  .logo-image{   
+    width:32em;
+  }
+  
+}
+
+@media (min-width: 400px) and (max-width: 900px){
+  .logo-image{
+    width:20em;
+  }
+  
+}
+
+@media (max-width: 399px){
+  .logo-image{
+    width:14em;
+  }
+  
+}
