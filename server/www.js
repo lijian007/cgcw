@@ -7,7 +7,7 @@
  const app = require('./app')
  const debug = require('debug')('abs:server')
  const http = require('http')
- const conf = new require('./config')()
+ const conf = new require('./cgcw_config')()
  /**
   * Get port from environment and store in Express.
   */
