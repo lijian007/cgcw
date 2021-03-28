@@ -33,18 +33,13 @@ const Login = () => {
 
     const handleSubmit = async () => {
         if (email.length > 0 && password.length > 0) {
-            console.log("email password")
-            console.log(email)
-            console.log(password)
             let res = await api_login({ email, password })
-            console.log("res.data")
-            console.log(res.data)
             if (res.data.code === 1000) {
                 console.log("1000")
                 notification.info({
                     message: 'info',
                     description:
-                      'Congratulations, it is working!',
+                      'You are successfully logged in!',
                     })
                 // rootDispatcher.userLogIn(res.data.user)
                 // history.push("")
