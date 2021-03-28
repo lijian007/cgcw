@@ -33,6 +33,9 @@ const Login = () => {
 
     const handleSubmit = async () => {
         if (email.length > 0 && password.length > 0) {
+            console.log("email password")
+            console.log(email)
+            console.log(password)
             let res = await api_login({ email, password })
             console.log("res.data")
             console.log(res.data)

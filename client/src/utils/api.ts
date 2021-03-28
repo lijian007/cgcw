@@ -14,6 +14,7 @@ const instance = axios.create({
   export async function api_login(params:{email:string,password:string}) {
     console.log("login url:"+`${API_BASE}/login`)
     const response = await instance.post(`${API_BASE}/login`, params)
+    console.log(params)
     return response
   }
 
