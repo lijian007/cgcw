@@ -1,0 +1,88 @@
+@import "~antd/dist/antd.less";
+// import { blue } from '@ant-design/colors';
+
+@foot-color: #fafafa !important;
+
+.nobackground() {
+  background: none !important;
+}
+
+.ant-layout {
+  .nobackground;
+}
+.ant-layout-header {
+  .nobackground;
+  text-align: center;
+}
+.ant-menu {
+  text-align: center;
+  color: oldlace;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: inline-block;
+  margin: auto;
+  margin-top: 5px;
+  line-height: normal;
+}
+.language-selection-zone {
+  display: flex;
+  width: 4em;
+
+  align-items: flex-end;
+  line-height: normal;
+}
+.language-selection-text {
+  font-size: 1em;
+  margin: auto;
+  font-weight: 700;
+  color: white;
+}
+
+.footer-box {
+  text-align: center;
+  color: @foot-color;
+  height: 10em;
+
+  .nobackground;
+}
+.page-divider {
+  border-top: 1px solid rgb(184, 177, 177);
+}
+
+.side-menu {
+  color: black;
+}
+
+.top-nav-bar {
+  .nobackground;
+  // color: rgb(247, 238, 238);
+}
+
+.logo-image {
+  margin-left: 8em;
+}
+@media (min-width: 901px) {
+  .logo-image {
+    width: 32em;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 900px) {
+  .logo-image {
+    width: 20em;
+  }
+}
+
+@media (max-width: 399px) {
+  .logo-image {
+    width: 14em;
+  }
+}
